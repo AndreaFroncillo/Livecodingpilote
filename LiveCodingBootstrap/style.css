@@ -17,7 +17,7 @@ h1, h2, h3, .h1, .h2, .h3{
 
 body{
     background-color: var(--lb);
-    color: var(--w);
+    color: var(--bl);
 }
 
 .bg-bl{
@@ -42,6 +42,10 @@ body{
 
 .text-w{
     color: var(--w);
+}
+
+.border-w{
+    border: 2px solid var(--w);
 }
 
 /* Header */
@@ -70,4 +74,139 @@ body{
 
 .logo{
     width: 50px;
+}
+
+/* Icons */
+
+.linea{
+    height: 5px;
+    background-color: var(--bl);
+    width: 60%;
+    position: relative;
+}
+
+.linea::before{
+    content: '';
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-color: var(--w);
+    border: 2px solid var(--bl);
+    position: absolute;
+    top: calc(50% - 10px);
+    left: calc(50% - 10px);
+}
+
+/* Timeline */
+
+.bor-left{
+    border-left: 2px solid var(--bl);
+}
+
+.bor-right{
+    border-right: 2px solid var(--bl);
+}
+
+/* Timeline progetto
+
+
+.pallino{
+    position: relative;
+}
+
+.pallino::after{
+    content: '';
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-color: var(--w);
+    border: 2px solid var(--bl);
+    position: absolute;
+    top: 0px;
+    left: -23px;
+} */
+
+.pal-right{
+    position: relative;
+}
+
+.pal-right::after{
+    content: '';
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-color: var(--w);
+    border: 2px solid var(--bl);
+    position: absolute;
+    top: 0px;
+    right: -24px;
+}
+
+.pal-left{
+    position: relative;
+}
+
+.pal-left::before{
+    content: '';
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-color: var(--w);
+    border: 2px solid var(--bl);
+    position: absolute;
+    top: 0px;
+    left: -24px;
+}
+
+/* Buttons */
+
+.button-custom{
+    height: 70px;
+    width: 200px;
+    padding: 10px;
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.top-left{
+    height: 20px;
+    width:  20px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    border-top: 2px solid var(--w);
+    border-left: 2px solid var(--w);
+}
+
+.top-right{
+    height: 20px;
+    width:  20px;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    border-top: 2px solid var(--w);
+    border-right: 2px solid var(--w);
+}
+
+.bottom-left{
+    height: 20px;
+    width:  20px;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    border-bottom: 2px solid var(--w);
+    border-left: 2px solid var(--w);
+}
+
+.bottom-right{
+    height: 20px;
+    width:  20px;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    border-bottom: 2px solid var(--w);
+    border-right: 2px solid var(--w);
 }

@@ -48,6 +48,10 @@ body{
     border: 2px solid var(--w);
 }
 
+.border-bl{
+    border: 2px solid var(--bl);
+}
+
 /* Header */
 
 .header-custom{
@@ -75,6 +79,10 @@ body{
 .logo{
     width: 50px;
 }
+
+.navbar-toggler:focus {
+    box-shadow: none;
+    }
 
 /* Icons */
 
@@ -209,4 +217,25 @@ body{
     right: 0px;
     border-bottom: 2px solid var(--w);
     border-right: 2px solid var(--w);
+}
+
+/* Positioned */
+
+.col-left{
+    position: relative;
+    top: -30px;
+    left: 30px;
+    background-color: var(--lb);
+    transition: 0.5s;
+}
+
+.col-left:hover{
+    top: 0px;
+    left: 0px;
+}
+
+@media screen and (max-width: 600px) {
+    .col-left{
+        position: static;
+    }
 }
